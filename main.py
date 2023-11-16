@@ -18,7 +18,9 @@ class Minefield:
         self.bombs = bombs
 
     def create_board(self):
-        pass
+        for row in range(0, self.m):
+            for col in range(0, self.n):
+                self.board[row][col] = Field(row, col, False)
 
     @property
     def height(self):
@@ -43,15 +45,20 @@ class Minefield:
         pass
 
     def display(self):
-        return "0"
+        if self.board[0, 0].is_bomb:
+            return "*"
+        else:
+            return "0"
 
     @staticmethod
     def get_display_value(field: Field):
-        return "0"
+        if field.is_bomb:
+            return "*"
+        return ""
 
 
 def main():
-    minefield = Minefield(2, 2)
+    minefield = Minefield(2, 2, [])
     minefield.display()
 
 
