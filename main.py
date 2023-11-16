@@ -2,6 +2,15 @@ import random
 from dataclasses import dataclass
 
 
+def create_mines(m, n, mines_number):
+    mines = []
+    for i in range(mines_number):
+        mine = [random.randint(0, m), random.randint(0, n)]
+        mines.append(mine)
+
+    return mines
+
+
 @dataclass
 class Field:
     x: int
@@ -27,17 +36,6 @@ class Minefield:
     @property
     def width(self):
         return 4
-
-
-    def create_mines(self):
-        mines = []
-        mines_number = self.n
-
-        for i in range(mines_number):
-            mine = [random.randint(self.n, self.m), random.randint(self.n, self.m)]
-            mines.append(mine)
-
-        return mines
 
     def get_mine_coordinates(self):
         pass
