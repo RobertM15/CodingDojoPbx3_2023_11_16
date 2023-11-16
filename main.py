@@ -2,10 +2,10 @@ from itertools import product
 from dataclasses import dataclass
 
 @dataclass
-class Field
+class Field:
     x: int
     y: int
-    isBomb: boolean
+    isBomb: bool
 
 class Minefield:
     board: list[list[Field]]
