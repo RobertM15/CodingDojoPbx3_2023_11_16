@@ -18,7 +18,7 @@ class Minefield:
     def create(self):
         pass
 
-    def get_mine_coordinates(self):
+    def get_mine_sign_to_display(self):
         pass
 
     def display(self):
