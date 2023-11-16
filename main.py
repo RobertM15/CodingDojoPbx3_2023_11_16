@@ -30,7 +30,7 @@ class Minefield:
 
     @staticmethod
     def get_display_value(field: Field):
-        pass
+        return "0"
 
 
 def main():
