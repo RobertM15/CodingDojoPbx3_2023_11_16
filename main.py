@@ -18,6 +18,7 @@ class Minefield:
         self.create()
 
     def create(self):
+        mines_coordiantes = self.get_mine_coordinates()
         pass
 
     def get_mine_coordinates(self):
