@@ -25,6 +25,7 @@ class Minefield:
         self.m = m
         self.n = n
         self.bombs = bombs
+        self.create_board()
 
     def create_board(self):
         for row in range(0, self.m):
