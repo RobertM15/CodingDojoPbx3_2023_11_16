@@ -1,12 +1,14 @@
-from itertools import product
 from dataclasses import dataclass
 import random
+from itertools import product
+
 
 @dataclass
-class Field
+class Field:
     x: int
     y: int
-    is_bomb: boolean
+    is_bomb: bool
+
 
 class Minefield:
     board: list[list[Field]]
@@ -32,8 +34,9 @@ class Minefield:
     def get_mine_coordinates(self):
         pass
 
+
     def display(self):
-        pass
+        return "0"
 
     @staticmethod
     def get_display_value(field: Field):
