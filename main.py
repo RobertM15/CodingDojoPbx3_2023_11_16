@@ -1,11 +1,12 @@
 from itertools import product
 from dataclasses import dataclass
+import random
 
 @dataclass
 class Field
     x: int
     y: int
-    isBomb: boolean
+    is_bomb: boolean
 
 class Minefield:
     board: list[list[Field]]
@@ -15,9 +16,19 @@ class Minefield:
         self.n = n
         self.create()
 
-    def create(self):
+    def create_board(self):
         pass
-
+    
+    def create_mines():
+      mines = []
+      mines_number = self.n
+      
+      for i in range(mines_number)
+        mine = [random.randint(self.n,self.m), random.randint(self.n,self.m)]
+        mines.append(mine)
+      
+      return mines
+    
     def get_mine_coordinates(self):
         pass
 
