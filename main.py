@@ -3,6 +3,9 @@ from dataclasses import dataclass
 
 
 def create_mines(m, n, mines_number):
+    if n*m < mines_number:
+        raise ValueError("Too many mines")
+
     mines = []
     for i in range(mines_number):
         mine = [random.randint(0, m), random.randint(0, n)]
