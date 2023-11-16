@@ -1,5 +1,5 @@
+import random
 from dataclasses import dataclass
-from itertools import product
 
 
 @dataclass
@@ -17,13 +17,33 @@ class Minefield:
         self.n = n
         self.create()
 
+    def create_board(self):
+        pass
+
+    @property
+    def height(self):
+        return 3
+
+    @property
+    def width(self):
+        return 4
+
     def create(self):
         mines_coordiantes = self.get_mine_coordinates()
         pass
 
+    def create_mines(self):
+        mines = []
+        mines_number = self.n
+
+        for i in range(mines_number):
+            mine = [random.randint(self.n, self.m), random.randint(self.n, self.m)]
+            mines.append(mine)
+
+        return mines
+
     def get_mine_coordinates(self):
         pass
-
 
     def display(self):
         return "0"
