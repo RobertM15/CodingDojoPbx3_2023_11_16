@@ -43,7 +43,7 @@ class Minefield:
         pass
 
     def display(self):
-        if self.board[0, 0].is_bomb:
+        if self.board[0][0].is_bomb:
             return "*"
         else:
             return "0"
