@@ -1,12 +1,11 @@
 from itertools import product
+from dataclasses import dataclass
 
-
-class Field:
-    def __init__(self, x, y, is_mine) -> None:
-        self.x = x
-        self.y = y
-        self.is_mine = is_mine
-
+@dataclass
+class Field
+    x: int
+    y: int
+    isBomb: boolean
 
 class Minefield:
     board: list[list[Field]]
