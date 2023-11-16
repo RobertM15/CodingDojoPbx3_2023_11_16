@@ -24,8 +24,9 @@ class Minefield:
     def get_mine_coordinates(self):
         pass
 
+
     def display(self):
-        pass
+        return "0"
 
     @staticmethod
     def get_display_value(field: Field):
