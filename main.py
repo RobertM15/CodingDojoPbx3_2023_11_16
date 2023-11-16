@@ -6,7 +6,7 @@ from itertools import product
 class Field:
     x: int
     y: int
-    isBomb: bool
+    is_bomb: bool
 
 
 class Minefield:
