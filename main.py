@@ -12,10 +12,10 @@ class Field:
 class Minefield:
     board: list[list[Field]]
 
-    def __init__(self, m, n) -> None:
+    def __init__(self, m, n, bombs) -> None:
         self.m = m
         self.n = n
-        self.create()
+        self.bombs = bombs
 
     def create_board(self):
         pass
@@ -28,9 +28,6 @@ class Minefield:
     def width(self):
         return 4
 
-    def create(self):
-        mines_coordiantes = self.get_mine_coordinates()
-        pass
 
     def create_mines(self):
         mines = []
