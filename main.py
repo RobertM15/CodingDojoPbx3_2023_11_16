@@ -1,4 +1,8 @@
-print("Those bubbles don't make any sense!")
-print("bobson commituje")
-print("bobson2")
-print("testt")
+class Minefield:
+    def display(self, ):
+        pass
+
+
+class Field:
+    pass
+
