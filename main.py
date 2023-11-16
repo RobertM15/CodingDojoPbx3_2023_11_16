@@ -1,11 +1,13 @@
-from itertools import product
 from dataclasses import dataclass
+from itertools import product
+
 
 @dataclass
 class Field:
     x: int
     y: int
     isBomb: bool
+
 
 class Minefield:
     board: list[list[Field]]
@@ -18,7 +20,7 @@ class Minefield:
     def create(self):
         pass
 
-    def get_mine_sign_to_display(self):
+    def get_mine_coordinates(self):
         pass
 
     def display(self):
