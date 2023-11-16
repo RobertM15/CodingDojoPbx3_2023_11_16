@@ -24,9 +24,6 @@ class Minefield:
     def get_mine_coordinates(self):
         pass
 
-    def get_field_sign_to_display(self):
-        pass
-
     def display(self):
         pass
 
