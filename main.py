@@ -8,7 +8,8 @@ class Field:
 
 
 def main():
-    print("This is the main function.")
+    minefield = Minefield(2, 2)
+    minefield.display()
 
 
 if __name__ == "__main__":
